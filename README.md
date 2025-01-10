@@ -25,3 +25,13 @@ The 2 first errors are shown in an error banner at the top of the App component.
 
 Notice that the global error handling (catch all) is set up in the `App` component using the `setGlobalErrorHandling` function. This
 function is operating at the root level of the application and will catch all errors that are not caught by try-catch, `errorElement` or `ErrorBoundary` components. In this demo, we cannot show the errors in React. This will take more effort. So we will just show the errors in the console. The rest of the errors are shown in the UI.
+
+## How to run the example
+
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm start`
+
+## Overview of the components
+
+![Components](./images/components.png)
