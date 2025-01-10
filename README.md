@@ -16,10 +16,10 @@ There are many types of errors that can occur in a React application. These erro
 
 In this example the `ErrorProvoker` component shows 4 buttons.
 
-- 1. button throws a JS runtime error
-- 2. button throws a network error
-- 3. button throws a React render error
-- 4. button shows a child component that has a render error
+1. button throws a JS runtime error (handled by a `try...catch` statement)
+2. button throws a network error (handled by a `try...catch` statement)
+3. button throws a React render error (handled by the react router `errorElement`)
+4. button shows a child component that has a render error (handled by the `ErrorBoundary` component)
 
 The 2 first errors are shown in an error banner at the top of the App component. The 3rd error is shown in the error page provided with the react router routes `errorElement`. The 4th error is shown in the child component itself using the `ErrorBoundary` component.
 
