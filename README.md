@@ -26,6 +26,10 @@ The 2 first errors are shown in an error banner at the top of the App component.
 Notice that the global error handling (catch all) is set up in the `App` component using the `setGlobalErrorHandling` function. This
 function is operating at the root level of the application and will catch all errors that are not caught by try-catch, `errorElement` or `ErrorBoundary` components. In this demo, we cannot show the errors in React. This will take more effort. So we will just show the errors in the console. The rest of the errors are shown in the UI.
 
+## Page not found (404)
+
+The `PageNotFound` component is shown when the user navigates to a page that does not exist. This is handled by the react router `PageNotFound` component.
+
 ## How to run the example
 
 1. Clone the repository
